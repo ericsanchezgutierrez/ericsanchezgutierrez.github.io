@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contacta amb l'Eric a través del formulari del seu portafoli.">
+    <title>Contacte | Portafoli d'Eric</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Portafoli d’Eric</a>
+        <nav aria-label="Navegació principal">
+            <a href="index.html">Inici</a>
+            <a href="projectes.html">Projectes</a>
+            <a href="sobre-mi.html">Sobre mi</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacte.html" aria-current="page">Contacte</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <p class="eyebrow">Escriu-me</p>
+            <h1>Contacte</h1>
+            <p>Els camps marcats amb * són obligatoris.</p>
+        </section>
+
+        <section class="content-section">
+            <form class="contact-form">
+                <div class="form-field">
+                    <label for="nom">Nom i cognoms *</label>
+                    <input id="nom" name="nom" type="text" placeholder="El teu nom i cognoms" minlength="2" maxlength="80" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Adreça electrònica *</label>
+                    <input id="email" name="email" type="email" placeholder="nom@exemple.cat" maxlength="120" required>
+                </div>
+                <div class="form-field">
+                    <label for="assumpte">Assumpte *</label>
+                    <input id="assumpte" name="assumpte" type="text" placeholder="Motiu del missatge" minlength="3" maxlength="100" required>
+                </div>
+                <div class="form-field">
+                    <label for="missatge">Missatge *</label>
+                    <textarea id="missatge" name="missatge" placeholder="Escriu aquí el teu missatge" minlength="10" maxlength="1000" required></textarea>
+                </div>
+                <button class="button" type="submit">Envia el missatge</button>
+                <p class="form-note">Aquest formulari és demostratiu: l’enviament real encara no està configurat.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Eric Sánchez Gutiérrez</p>
+    </footer>
+</body>
+</html>
